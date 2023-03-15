@@ -3,24 +3,21 @@
     <head>
         <meta charset="UTF-8">
         <title>My Website</title>
-
-        <style>
-            body{
-                background-color: rgb(139, 207, 207);
-            }
-            hr{
-                border-style: dotted none none;
-                border-color: grey;
-                border-width: 5px;
-                width: 10%;
-            }
-        </style>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Xiyue Zheng</h1>
-        <h3>LMU Student</h3>
+        <table>
+            <tr>
+                <td><img class="profile photo" src="profile.jpg" alt=""></td>
+                <td>
+                    <h1 id="name">Xiyue Zheng</h1>
+                    <h3>LMU Student</h3>
+                    <h3>Github: <a href="https://github.com/Yoon-z">https://github.com/Yoon-z</a></h3>
+                </td>
+            </tr>
+        </table>
         <hr>
-        <h2>Education</h2>
+        <h2 class="heading">Education</h2>
         <ul>
             <table>
                 <thead>
@@ -31,10 +28,16 @@
                 </thead>
                 <tr>
                     <td>2021-</td>
-                    <td><a href="https://www.lmu.de/de/studium/studienangebot/alle-studienfaecher-und-studiengaenge/informatik-bachelor-mit-nebenfach-30-ects-bachelor-hauptfach-2911.html">LMU Informatics B.Sc.</a></td>
+                    <td>&nbsp&nbsp&nbspLMU Informatics B.Sc.</td>
+                    <!-- using &nbsp to add space -->
                 </tr>
             </table>
         </ul>
         <hr>
+        <h2 class="heading">Programming Skills</h2>
+        <pre id="skills">     C, Java, Python, HTML, CSS, Javascript</pre>
+        <hr>
+        <h2 class="heading">Hobbies</h2>
+        <pre id="hobbies">     Film, Music</pre>
     </body>
 </html>
